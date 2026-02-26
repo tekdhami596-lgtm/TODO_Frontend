@@ -6,7 +6,7 @@ import Todos from "../pages/Todos";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import ProtectedRoute from "../components/ProtectedRoute";
-import UserSelect from "../pages/userSelect";
+import UserSelect from "../pages/UserSelect";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { path: "/", element: <Home /> },
-      {path:"/users", element: <UserSelect />},
+      { path: "/users", element: <UserSelect /> },
       { path: "/login", element: <Login /> },
       { path: "/signup", element: <Signup /> },
       {
