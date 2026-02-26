@@ -61,7 +61,7 @@ export default function Login() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded shadow transition duration-200"
+            className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded shadow transition duration-200"
           >
             Login
           </button>
@@ -69,7 +69,10 @@ export default function Login() {
 
         <p className="text-gray-500 text-sm text-center mt-4">
           Don't have an account?{" "}
-          <a href="/signup" className="text-blue-600 hover:underline">
+          <a
+            href="/signup"
+            className="cursor-pointer text-blue-600 hover:underline"
+          >
             Signup
           </a>
         </p>

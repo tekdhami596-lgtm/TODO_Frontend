@@ -84,7 +84,7 @@ export default function Todos() {
       );
       setEditingTodo(null);
     } catch (err) {
-      setEditError(err,"Failed to update todo. Please try again");
+      setEditError(err, "Failed to update todo. Please try again");
     }
   };
 
@@ -153,13 +153,13 @@ export default function Todos() {
                   <td className="px-6 py-4 flex justify-center gap-2">
                     <button
                       onClick={() => setEditingTodo(todo)}
-                      className="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded transition duration-200"
+                      className="cursor-pointer bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded transition duration-200"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => deleteTodo(todo.id)}
-                      className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded transition duration-200"
+                      className="cursor-pointer bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded transition duration-200"
                     >
                       Delete
                     </button>
@@ -201,14 +201,14 @@ export default function Todos() {
               <div className="flex gap-2">
                 <button
                   type="submit"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow transition duration-200"
+                  className="cursor-pointer bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow transition duration-200"
                 >
                   Update
                 </button>
                 <button
                   type="button"
                   onClick={() => setEditingTodo(null)}
-                  className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded transition duration-200"
+                  className="cursor-pointer bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded transition duration-200"
                 >
                   Cancel
                 </button>

@@ -111,7 +111,7 @@ export default function Signup() {
           <button
             type="submit"
             disabled={password === null && username === null}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded shadow transition duration-200"
+            className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded shadow transition duration-200"
           >
             Signup
           </button>
